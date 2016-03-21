@@ -1,0 +1,22 @@
+{
+  "name": "portail-parent",
+  "description": "",
+  "main": "",
+  "authors": [
+    "fdrean_tcs <fabien.drean@tcs.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "angularjs#^1.5.0"
+  }
+}

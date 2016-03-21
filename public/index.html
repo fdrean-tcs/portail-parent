@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portail parent</title>
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/bower_components/angular/angular-csp.css"/>
+        <link rel="stylesheet" href="/stylesheets/style.css"/>
+    </head>
+    <body ng-app="portailParentApp">
+        <div ng-controller="PortailController" ng-show="navigation">
+            <div class="topbar navbar-fixed-top">
+                <menu-navigation></menu-navigation>
+            </div>
+            
+            <div class="container portail-header">
+                <header-portail></header-portail>
+            </div>
+            
+            <div class="container portail-body">
+                <h3 ng-bind="navigation.page.header"></h3>
+                <div ng-include="navigation.page.url"></div>
+            </div>
+            
+            <footer-portail></footer-portail>
+        </div>
+        
+        <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/javascripts/ng-app.js"></script>
+        <script type="text/javascript" src="/javascripts/ng-directives.js"></script>
+        <script type="text/javascript" src="/javascripts/ng-controllers.js"></script>
+        <script type="text/javascript" src="/javascripts/ng-providers.js"></script>
+    </body>
+</html>

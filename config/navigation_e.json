@@ -1,0 +1,33 @@
+{
+    "home": {
+        "icon": "/images/home.png",
+        "url": "/pages/accueil.html"
+    },
+    "entries": {
+        "left": [
+            {
+                "key": "enseignements",
+                "type": "link",
+                "label": "Mes enseignements",
+                "header": "Enseignements",
+                "url": "/pages/enseignements.html"
+            },
+            {
+                "key": "profil",
+                "type": "link",
+                "label": "Profil",
+                "header": "Mon profil",
+                "url": "/pages/profil.html"
+            }
+        ],
+        "right": [
+            {
+                "key": "contact",
+                "type": "link",
+                "label": "Contact",
+                "header": "Formulaire de contact",
+                "url": "/pages/contact.html"
+            }
+        ]
+    }
+}

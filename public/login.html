@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 col-sm-offset-2 col-md-offset-3 col-lg-offset-4">
+        <form name="loginForm" ng-submit="loginForm.$valid && send()">
+            <div class="form-group">
+                <label for="login-user">Nom d'utilisateur</label>
+                <input required id="login-user" type="text" ng-model="login.user" class="form-control"></input>
+            </div>
+            
+            <div class="form-group">
+                <label for="login-password">Mot de passe</label>
+                <input required id="login-password" type="password" ng-model="login.password" class="form-control"></input>
+            </div>
+            
+            <div>
+                <input type="submit" value="Connexion" class="btn btn-valid">
+            </div>
+        </form>
+    </div>
+</div>

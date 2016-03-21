@@ -1,0 +1,139 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar-brand img {
+  margin-top: -6px;
+}
+
+.navbar-default, .navbar-header, .navbar-fixed-top {
+  border: none;
+  background-color: #B2CC2B;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #9AB200;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+  background-color: #ABC431;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background-color: #ABC431;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+  background-color: #B2CC2B;
+}
+
+.portail-header:before {
+    content: "";
+    display: block;
+    height: 60px;
+}
+
+
+.portail-body:before {
+  content: "";
+    display: block;
+    height: 50px;
+}
+
+
+.portail-body:after {
+  content: "";
+    display: block;
+    height: 50px;
+}
+
+.footer {
+  padding: 2px 2px 0px 2px;
+  color: white;
+  background-color: #3c3c3c;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}
+
+.btn-valid {
+  background-color: orange;
+}
+
+.portail-message-error {
+  text-align: center;
+}
+
+.portail-message-error div {
+  background-color: #FFA6A6;
+}
+
+.portail-message-error-header {
+  border: 1px dotted #FF1616;
+  border-bottom: 1px solid #F37575;
+}
+
+.portail-message-error-body {
+  font-weight: bold;
+  border: 1px dotted #FF1616;
+  border-top: none;
+  height:100px;
+  line-height: 100px;
+}
+
+.panel-group {
+  width: 100%;
+}
+
+.panel-group .panel {
+  border: 1px solid #ddd;
+}
+
+.panel-heading.panel-collapser {
+  cursor: pointer;
+  background-color: #9AB200;
+  padding:0px;
+}
+
+.panel-heading {
+  background-color: #B2CC2B;
+  padding:0px;
+}
+
+.panel-heading .panel-title {
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+
+.panel-heading.panel-collapser .panel-title:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: right;
+    color: grey;
+}
+
+.panel-heading.panel-collapser .panel-title.collapsed:after {
+    content: "\e080";
+}
+
+.panel-body {
+  padding-bottom: 0px;
+}
+
+.table tr th {
+  background-color: lightgray;
+}

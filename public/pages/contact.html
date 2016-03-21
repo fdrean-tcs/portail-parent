@@ -1,0 +1,44 @@
+<div class="row" ng-controller="ContactController" >
+    <div class="col-sm-6 col-xs-12">
+        <form name="contactForm" ng-submit="contactForm.$valid && send(user)" data-ng-init="init(user)">
+            <div class="form-group">
+                <label for="contact-email">Email : *</label>
+                <input required id="contact-email" type="email" ng-model="contact.email" class="form-control"></input>
+            </div>
+            
+            <div class="form-group">
+                <label for="contact-subject">Sujet : *</label>
+                <input required id="contact-subject" type="text" ng-model="contact.subject" class="form-control"></input>
+            </div>
+            
+            <div class="form-group">
+                <label for="contact-body">Détail de votre demande : *</label>
+                <textarea required id="contact-body" type="textarea" ng-model="contact.body" class="form-control" rows="10"></textarea>
+            </div>
+            
+            <div>
+                <input type="submit" value="Envoyer" class="btn btn-valid">
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-6 hidden-xs">
+        <div ng-hide="isEmpty()">
+            <p>
+                <div>
+                    <strong>Message de :</strong> {{ user.firstname }} {{ user.name }}
+                </div>
+                
+                <div>
+                    <strong>Le :</strong> {{ getDate() | date:'dd/MM/yyyy' }}
+                </div>
+            </p>
+            
+            <p>
+                <strong>{{ contact.subject }}</strong>
+            </p>
+            <p>
+                {{ contact.body }}
+            </p>
+        </div>
+    </div>
+</div>

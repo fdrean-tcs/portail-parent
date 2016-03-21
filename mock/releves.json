@@ -1,0 +1,96 @@
+[
+    {
+        "enfant": {
+            "id": 1,
+            "prenom": "Axl",
+            "nom": "Heck",
+            "classe": {
+                "id": 1,
+                "nom": "10VG/1"
+            }
+        },
+        "disciplines": [
+            { 
+                "id": 1,
+                "nom": "Français",
+                "abreviation": "fra",
+                "moyenne": "2.0",
+                "travaux": [
+                    {
+                        "id": 1,
+                        "sujet": "Dictée : Le malade imaginaire",
+                        "date": "2015-10-12T00:00:00.000",
+                        "evaluation": "2.5"
+                    },
+                    {
+                        "id": 2,
+                        "sujet": "Poésie : Le Corbeau et le Renard",
+                        "date": "2015-11-08T00:00:00.000",
+                        "evaluation": "1.5"
+                    }
+                ]
+            },
+            { 
+                "id": 2,
+                "nom": "Mathématiques",
+                "abreviation": "mat",
+                "moyenne": "2.75",
+                "travaux": [
+                    {
+                        "id": 3,
+                        "sujet": "Les additions",
+                        "date": "2015-12-09T00:00:00.000",
+                        "evaluation": "3.0"
+                    },
+                    {
+                        "id": 4,
+                        "sujet": "Les soustractions",
+                        "date": "2015-10-23T00:00:00.000",
+                        "evaluation": "2.5"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "enfant": {
+            "id": 2,
+            "prenom": "Brick",
+            "nom": "Heck",
+            "classe": {
+                "id": 2,
+                "nom": "8P/1"
+            }
+        },
+        "disciplines": [
+            { 
+                "id": 1,
+                "nom": "Français",
+                "abreviation": "fra",
+                "moyenne": "6.0",
+                "travaux": [
+                    {
+                        "id": 5,
+                        "sujet": "Réciter l'alphabet",
+                        "date": "2015-09-30T00:00:00.000",
+                        "evaluation": "6.0"
+                    }
+                ]
+            },
+            { 
+                "id": 2,
+                "nom": "Mathématiques",
+                "abreviation": "mat",
+                "moyenne": "5.5",
+                "travaux": [
+                    {
+                        "id": 6,
+                        "sujet": "Compter jusau'à 10",
+                        "date": "2015-10-16T00:00:00.000",
+                        "evaluation": "6.0"
+                    }
+                ]
+            }
+        ]
+    }
+]

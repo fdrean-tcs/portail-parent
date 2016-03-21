@@ -1,0 +1,33 @@
+<div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-portail" aria-expanded="false">
+                    <span class="sr-only">Navigatopm</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" ng-click="setPage(navigation.home)">
+                    <img ng-src="{{navigation.home.icon}}"></img>
+                </a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbar-collapse-portail">
+                <ul class="nav navbar-nav" ng-class="{'navbar-right': position == 'right'}" ng-repeat="(position, entries) in navigation.entries">
+                    <li ng-class="{'active': isActive(entry), 'dropdown': isDropdown(entry)}" ng-repeat="entry in entries">
+                        <a ng-attr-data-toggle="{{isDropdown(entry) ? 'dropdown' : ''}}" ng-attr-aria-haspopup="{{isDropdown(entry) ? 'true' : ''}}" ng-attr-aria-expanded="{{isDropdown(entry) ? 'false' : ''}}"
+                                ng-class="{'dropdown-toggle': isDropdown(entry)}" class="pointer" ng-click="isLink(entry) && setPage(entry)" btn-auto-collapse isdropdown="{{isDropdown(entry)}}">
+                            {{ entry.label }} <span ng-show="isDropdown(entry)" class="caret"></span>
+                        </a>
+                        <ul ng-show="isDropdown(entry)" class="dropdown-menu">
+                            <li ng-class="{'divider': isSeparator(child), 'active': isActive(child)}" ng-repeat="child in entry.children">
+                                <a ng-show="isLink(child)" ng-click="isLink(child) && setPage(child)" class="pointer" btn-auto-collapse isdropdown="{{isDropdown(child)}}">{{ child.label }}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

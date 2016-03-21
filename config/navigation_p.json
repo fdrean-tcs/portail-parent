@@ -1,0 +1,56 @@
+{
+    "home": {
+        "icon": "/images/home.png",
+        "url": "/pages/accueil.html"
+    },
+    "entries": {
+        "left": [
+            {
+                "type": "menu",
+                "label": "Mes enfants",
+                "children": [
+                    {
+                        "key": "syntese",
+                        "type": "link",
+                        "label": "Synthèse des enseignements",
+                        "header": "Synthèse des enseignements suivis par mes enfants",
+                        "url": "/pages/enfants/synthese.html"
+                    },
+                    {
+                        "key": "releves",
+                        "type": "link",
+                        "label": "Relevés de notes",
+                        "header": "Relevés de notes",
+                        "url": "/pages/enfants/releves.html"
+                    },
+                    {
+                        "type": "separator"
+                    },
+                    {
+                        "key": "documents",
+                        "type": "link",
+                        "label": "Documents",
+                        "header": "Documents éditables",
+                        "url": "/pages/enfants/documents.html"
+                    }
+                ]
+            },
+            {
+                "key": "profil",
+                "type": "link",
+                "label": "Profil",
+                "header": "Mon profil",
+                "url": "/pages/profil.html"
+            }
+        ],
+        "right": [
+            {
+                "key": "contact",
+                "type": "link",
+                "label": "Contact",
+                "header": "Formulaire de contact",
+                "url": "/pages/contact.html"
+            }
+        ]
+    }
+}
