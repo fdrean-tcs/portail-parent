@@ -15,9 +15,6 @@
                         De
                     </th>
                     <th>
-                        Le
-                    </th>
-                    <th>
                         Corps du message
                     </th>
                 </tr>
@@ -26,10 +23,7 @@
                         {{ $index + 1 }}
                     </td>
                     <td>
-                        {{ message.sender }}
-                    </td>
-                    <td>
-                        {{ message.date | date: 'dd/MM/yyyy' }}
+                        {{ message.sender }}, le {{ message.date | date: 'dd/MM/yyyy' }}
                     </td>
                     <td>
                         {{ message.body }}
